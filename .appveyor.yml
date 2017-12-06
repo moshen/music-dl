@@ -1,0 +1,8 @@
+environment:
+  PYINSTALLER_PATH: C:\\Python36-x64\Scripts\pyinstaller.exe
+install:
+  - C:\Python36-x64\Scripts\pip install pyinstaller appjar youtube-dl requests lxml
+build_script:
+  - C:\Python36-x64\python build.py
+artifacts:
+  - path: dist\*
