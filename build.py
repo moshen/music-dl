@@ -7,7 +7,7 @@ from lxml import etree
 
 def windowsBuild():
     pyinstaller = 'pyinstaller'
-    if os.environ['PYINSTALLER_PATH'] != None:
+    if 'PYINSTALLER_PATH' in os.environ:
         pyinstaller = os.environ['PYINSTALLER_PATH']
 
     ffmpegPageReq = requests.get('http://ffmpeg.zeranoe.com/builds/')
